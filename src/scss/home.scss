@@ -1,0 +1,273 @@
+//====================================================================================================
+.game {
+    background: url(../img/bg_midl_left_two.png) left -40px  top -29px no-repeat;
+	
+    margin-bottom: 86px;
+
+    // .game__container
+
+    &__container {
+    }
+
+    // .game__content
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        gap: 10%;
+        margin-bottom: 133px;
+    }
+
+    // .game__item-left
+
+    &__item-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    // .game__title-box
+
+    &__title-box {
+    }
+
+    // .game__title
+
+    &__title {
+        // font-family: Philosopher;
+    }
+
+    // .game__decscription
+
+    &__decscription {
+    }
+
+    // .game__item-right
+
+    &__item-right {
+        flex-basis: 56.764%;
+    }
+
+    // .game__alert
+
+    &__alert {
+        min-height: 357px;
+        margin-bottom: 74px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #222222;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    // .game__alert-description
+
+    &__alert-description {
+        color: #DCDCDC;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        // font-family: $fontFamily;
+    }
+
+    // .game__alert-link
+
+    &__alert-link {
+        display: block;
+        max-width: 283px;
+        color: #5EA6CF;
+        font-family: $fontPhilosopher;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    // .game__icon
+
+    &__icon {
+        display: flex;
+        justify-content: end;
+    }
+
+    // .game__icon-list
+
+    &__icon-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 25px;
+        column-gap: 25px;
+        margin-right: 131px;
+    }
+
+    // .game__icon-item
+
+    &__icon-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: #FFF;
+        font-family: $fontPhilosopher;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        &::before {
+            content: "";
+            width: 90px;
+            height: 90px;
+            background-image: url(../img/game_icon.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        }
+       
+    }
+
+    // .game__icon-text
+
+    &__icon-text {
+
+    }
+
+
+
+    
+}
+.site-button {
+}
+.label {
+    display: flex;
+    justify-content: space-around;
+    height: 74px;
+    margin-bottom: 23px;
+    // .label_item
+
+    &__item {
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include adaptiveValue("font-size", 25, 17);
+
+        &_active {
+            width: 100%;
+            height: 100%;
+            color: #5EA6CF;
+            background: linear-gradient(180deg, #28414F 0%, #2E4666 100%);
+            border-top-right-radius: 53px;
+            border-bottom-left-radius: 53px;
+        }
+    }
+}
+
+
+
+// section about
+
+    .about {
+        margin-bottom: 100px;
+
+    // .about__content
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+
+}
+.article-left {
+    flex-basis: 30.722%;
+    
+    // .article-left__title
+
+    &__title {
+        color: #DCDCDC;
+        text-align: center;
+        font-family: $fontPhilosopher;
+        @include adaptiveValue("font-size", 35, 30);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 40px;
+        
+    }
+
+    // .article-left__description
+
+    &__description {
+        // height: 100%;
+        min-height: 700px;
+        background-color: #222;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+}
+.article-center {
+    flex-basis: 30.722%;
+    // .article-center__title
+
+    &__title {
+        color: #DCDCDC;
+        text-align: center;
+        font-family: $fontPhilosopher;
+        @include adaptiveValue("font-size", 35, 30);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 40px;
+
+    }
+
+    // .article-center__description
+
+    &__description {
+        min-height: 220px;
+        background-color: #222;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.article-right {
+    flex-basis: 30.722%;
+    // .article-right__title
+
+    &__title {
+        color: #DCDCDC;
+        text-align: center;
+        font-family: $fontPhilosopher;
+        @include adaptiveValue("font-size", 35, 30);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 40px;
+
+    }
+
+    // .article-right__description
+
+    &__description {
+        min-height: 100px;
+        background-color: #222;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+}
+
+
+//====================================================================================================

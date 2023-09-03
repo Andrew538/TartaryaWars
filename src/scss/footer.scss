@@ -1,0 +1,66 @@
+//====================================================================================================
+.footer {
+    height: 168px;
+    background-color: #222;
+   
+  
+    // .footer__container
+
+    &__container {
+    }
+
+    // .footer__content
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 168px;
+
+    }
+
+    // .footer__logo
+
+    &__logo {
+        display: block;
+        width: 131px;
+        height: 73px;
+        background-image: url(../img/icon/footer_logo.svg);
+        background-repeat: no-repeat;
+    }
+
+    // .footer__copy
+
+    &__copy {
+       
+    }
+
+    // .footer__copy-text
+
+    &__copy-text {
+    }
+}
+.site-rating {
+
+    // .site-rating__list
+
+    &__list {
+    }
+
+    // .site-rating__item
+
+    &__item {
+    }
+
+    // .site-rating__top
+
+    &__top {
+    }
+
+    // .site-rating__bottom
+
+    &__bottom {
+    }
+}
+
+//====================================================================================================
